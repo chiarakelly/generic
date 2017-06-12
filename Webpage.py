@@ -13,7 +13,10 @@ def temperature():
 	#Refer to search page 'main'
 	temp_k = float(json_object['main']['temp'])
 	temp_c = (temp_k - 273.15)
-	return render_template('temperature.html', temp=temp_c)
+	if temp_c >= 15: 
+		return render_template('hot.html', temp=temp_c)
+	else: 
+		return render_template('cold.html', temp=temp_c)
 
 @app.route('/')
 def index(): 
