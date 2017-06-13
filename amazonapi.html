@@ -1,12 +1,10 @@
 <html>
-	<head>
-		<title> Cold </title>
-	</head>
-
-<body>
-<h1> The Current Temperature (C) is {{ temp }} degrees. </h1>
-<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h1> The Current Temperature (C) is {{ temp }} degrees. </h1>
+  <head>
+    <title>eBay Search Results</title>
+    <style type="text/css"> body { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; } h1 { color: #777; font-weight: normal; font-size: 24px; margin: 0; margin-left: 5px; } tr { border-bottom: 1px solid #CCC; padding: 15px 0; display: block; } .image-container { text-align: center; border: 1px solid #CCC; width: 150px; } .data-container { vertical-align: top; padding-left: 15px; } p { margin: 0 0 5px; } .item-link, .item-link:hover, .item-link:visited, .item-link:active { text-decoration: none; color: #333; } .title { color: #5786bd; font-weight: bold; margin-bottom: 10px; } .subtitle { color: #777; font-size: 12px; } .price { color: #333; font-weight: bold; } .bin { color: #777; font-size: 12px; } .fs { font-size: 12px; font-weight: bold; } </style>    
+  </head>
+  <body>
+    <h1>eBay Search Results</h1>
     <div id="results"></div>
     <script> 
     function _cb_findItemsByKeywords(root) { 
@@ -48,9 +46,8 @@
 
     // Submit the request 
     s=document.createElement('script'); // create script element
-    s.src= 'https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=mariachi-InOrOut-PRD-a8df3d054-18236571&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=parka&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-GB&siteid=3';
+    s.src= 'https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=mariachi-InOrOut-PRD-a8df3d054-18236571&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=suncream&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-GB&siteid=3';
     document.body.appendChild(s);
     </script>
-</body>
-
+  </body>
 </html>
