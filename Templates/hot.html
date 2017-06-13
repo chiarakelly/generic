@@ -28,7 +28,7 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,small&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
     <link rel="stylesheet" href="/static/css/hot.css">
@@ -44,23 +44,35 @@
     }
     div.container {
     width: 100%;
-    border: 1px solid gray;
+    border: 1px white;
 }
 
 header, footer {
-    padding: 1em;
     color: yellow;
-    background-color: black;
+    background-color: transparent;
     clear: left;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px
+    color: green;
     text-align: center;
 }
 
 nav {
     float: left;
-    max-width: 160px;
+    max-width: 300px;
     margin: 0;
     padding: 1em;
+    background: rgb(204, 204,204);
+    background: rgb(204, 204, 204, 0.7);
 }
+
 
 nav ul {
     list-style-type: none;
@@ -72,11 +84,15 @@ nav ul a {
 }
 
 article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
+    margin-left: 200px;
     padding: 1em;
     overflow: hidden;
+    background-color: grey;
+    font-style: bold
+    opacity:0.6;
+
 }
+
     </style>
 	</head>
 
@@ -84,10 +100,12 @@ article {
 <div class= "container"> 
 
 <header>
-	<h1> The Current Temperature (C) is {{ temp }} degrees. You can go outside! </h1>
+	<h1> The Current Temperature (C) is {{ temp }} degrees. 
+  You can go outside! </h1>
 </header>
 
 <nav>
+<h3> Stay up to date with BBC weather <h3>
 	<ul>
 		<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</ul>
@@ -141,10 +159,10 @@ article {
     s.src= 'https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=mariachi-InOrOut-PRD-a8df3d054-18236571&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=suncream&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-GB&siteid=3';
     document.body.appendChild(s);
     </script>
-</body>
+  </article>
 
-=======
-</body>
+
+<footer>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
@@ -167,6 +185,8 @@ article {
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
+</footer>
+
 </body>
 <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
@@ -184,5 +204,4 @@ article {
     });
   </script>
 </html>
->>>>>>> origin/master
 
