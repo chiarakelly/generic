@@ -3,6 +3,8 @@ from flask import render_template
 from flask import request
 from flask import json
 import requests 
+from flask import Webpage
+	
 
 app = Flask("MyApp")
 
@@ -14,7 +16,7 @@ def index():
 
 @app.route('/result/', methods=['POST'])
 def hello():
-	postcode=request.form['postcode']
+	temp_c=request.form['postcode']
 	if postcode == "se38bs":result = {'result': 'Go outside'}
 	else:
 		result = {'result': 'Go inside'}
