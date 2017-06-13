@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title> Hot- You can go outside!</title>
+		<title> Hot</title>
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="description" content="Website which helps you to determine whether to go outside or not according to the temperature.">
@@ -42,15 +42,59 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+    div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: yellow;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
     </style>
 	</head>
 
 <body>
-<h1> <color="white"> The Current Temperature (C) is {{ temp }} degrees. </h1>
-<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class= "container"> 
 
-<<<<<<< HEAD
-<h1> The Current Temperature (C) is {{ temp }} degrees. </h1>
+<header>
+	<h1> The Current Temperature (C) is {{ temp }} degrees. You can go outside! </h1>
+</header>
+
+<nav>
+	<ul>
+		<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</ul>
+</nav>
+
+<article>
+<h2> Protect yourself with suncream! </h2>
     
     <div id="resultssuncream"></div>
     <div id="resultshat"></div>
@@ -101,8 +145,6 @@
 
 =======
 </body>
-
-   
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
