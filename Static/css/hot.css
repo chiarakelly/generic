@@ -16,7 +16,6 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-<<<<<<< HEAD
     background-image: url('/static/images/beach.jpg');
   }
 }
