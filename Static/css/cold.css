@@ -9,12 +9,17 @@ body::before {
     bottom: 0;
     top: 0;
     position: fixed;
+<<<<<<< HEAD
+=======
+    opacity: 0.6;
+>>>>>>> origin/master
 }
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
+<<<<<<< HEAD
     background-image: url('/static/images/beach.jpg');
   }
 }
@@ -460,6 +465,10 @@ body .demo-blog {
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
+=======
+    background-image: url('/static/images/rain.jpg');
+    opacity: 0.6;
+>>>>>>> origin/master
 }
 
 .social-btn {
@@ -490,7 +499,11 @@ body .demo-blog {
 
 .demo-blog .mdl-mini-footer {
   margin-top: 80px;
+<<<<<<< HEAD
   height: 120px;
+=======
+  height: 50px;
+>>>>>>> origin/master
   padding: 40px;
   -webkit-align-items: center;
       -ms-flex-align: center;

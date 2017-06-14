@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
 	<head>
 		<title> Hot- You can go outside!</title>
 		<meta charset="utf-8">
@@ -46,14 +47,129 @@
 	</head>
 
 <html>
+=======
+>>>>>>> origin/master
 	<head>
-		<title> Cold </title>
+		<title> Cold</title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="description" content="Website which helps you to determine whether to go outside or not according to the temperature.">
+   	 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    	<meta name="mobile-web-app-capable" content="yes">
+   		<link rel="icon" sizes="192x192" href="/static/images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    	<link rel="apple-touch-icon-precomposed" href="/static/images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    	<meta name="msapplication-TileImage" content="/static/images/touch/ms-touch-icon-144x144-precomposed.png">
+    	<meta name="msapplication-TileColor" content="#3372DF">
+
+    	<link rel="shortcut icon" href="/static/images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,small&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+    <link rel="stylesheet" href="/static/css/cold.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    div.container {
+    width: 100%;
+    border: 1px white;
+}
+
+header, footer {
+    color: yellow;
+    background-color: transparent;
+    clear: left;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px
+    color: green;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 300px;
+    margin: 0;
+    padding: 1em;
+    background: rgb(204, 204,204);
+    background: rgb(204, 204, 204, 0.7);
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 200px;
+    padding: 1em;
+    overflow: hidden;
+    background-color: grey;
+    font-style: bold
+    opacity:0.6;
+
+}
+
+    </style>
 	</head>
 
 <body>
+<<<<<<< HEAD
 <h1> The Current Temperature (C) is {{ temp }} degrees. </h1>
 <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div id="results"></div>
+=======
+<div class= "container"> 
+
+<header>
+	<h1> The Current Temperature (C) is {{ temp }} degrees. You should stay indoors! </h1>
+</header>
+
+<nav>
+<h3> Stay up to date with BBC weather <h3>
+	<ul>
+		<a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/bbcweather" data-tweet-limit="3">Tweets by bbcweather</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</ul>
+</nav>
+
+<article>
+<h2> Protect yourself against the rain with an umbrella! </h2>
+    
+    <div id="resultsumbrella"></div>
+    <div id="resultshat"></div>
+>>>>>>> origin/master
     <script> 
     function _cb_findItemsByKeywords(root) { 
       var items = root && root.findItemsByKeywordsResponse && root.findItemsByKeywordsResponse[0] && root.findItemsByKeywordsResponse[0].searchResult && root.findItemsByKeywordsResponse[0].searchResult[0] && root.findItemsByKeywordsResponse[0].searchResult[0].item || []; 
@@ -96,9 +212,18 @@
     s=document.createElement('script'); // create script element
     s.src= 'https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=mariachi-InOrOut-PRD-a8df3d054-18236571&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&callback=_cb_findItemsByKeywords&REST-PAYLOAD&keywords=parka&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-GB&siteid=3';
     document.body.appendChild(s);
+<<<<<<< HEAD
    </script>
    
    		<footer class="mdl-mini-footer">
+=======
+    </script>
+  </article>
+
+
+<footer>
+        <footer class="mdl-mini-footer">
+>>>>>>> origin/master
           <div class="mdl-mini-footer--left-section">
             <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
               <span class="visuallyhidden">Twitter</span>
@@ -120,6 +245,11 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
+<<<<<<< HEAD
+=======
+</footer>
+
+>>>>>>> origin/master
 </body>
 <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
@@ -136,4 +266,9 @@
       });
     });
   </script>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+>>>>>>> origin/master
